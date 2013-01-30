@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	width: 100%;
+	height: 100%;
+	background-image:url(image/Background.gif);
+	background-repeat:no-repeat;
+	background-repeat:repeat-x;
+	background-color:#dbdbdb;
+}
+a {
+	color: blue;
+	outline: none;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	margin: 0 0 0px
+}
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+#wrapper {
+	width: 942px;
+	height:auto;
+	margin: 0 auto;
+	margin-top: 10px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+	
+	#site-name {
+		width:115px;
+		height:45px;
+	}
+#header {
+	margin-top: 10px;
+	height: 188px; /*942x188 картинка над хедером + шапка лого поиск*/
+	background-image:url(image/foo.gif);
+	background-repeat:no-repeat;
+}
+#menu {
+	margin-top: 10px;
+	height:35px;
+	width:942px;
+	background-image:url(image/menu.png);
+	background-repeat:no-repeat;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	width: 100%;
+	padding: 0 0 80px;
+	height: 1%;
+	position: relative;
+}
+#middle:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+#container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+#content-left {
+	margin-top:20px;
+	height:326px;
+	width:280px;
+	background-image:url(image/news.png);
+	background-repeat:no-repeat;
+	float:bot;
+	padding: 0 10px 0 0;
+	
+}
+#content-right {
+	margin-top:-326px;
+	margin-left:300px;
+	height:448px;
+	width:448px;
+	background-image:url(image/press-relise.gif);
+	background-repeat:no-repeat;
+	float:bot;
+	padding: 0 10px 0 0;
+}
+#content-left-bot {
+	margin-top:20px;
+	/*margin-bottom:auto;*/
+	padding: 0  10px 0 0;
+	height:306px;
+	width:280px;
+	float:left;
+	background-image:url(image/states.png);
+	background-repeat:no-repeat;
+	
+}
+#content-right-bot {
+	margin-top:20px;
+	margin-right:230px;
+	/*margin-bottom:auto;*/
+	padding: 0  10px 0 0;
+	height:183px;
+	width:400px;
+	float:right;
+	background-image:url(image/organization.gif);
+	background-repeat:no-repeat;
+}
+/* Sidebar Right
+-----------------------------------------------------------------------------*/
+#sideRight {
+	float: right;
+	margin-top: 20px;
+	margin-right: -3px;
+	width: 220px;
+	height:446px;
+	margin-left: -250px;
+	position: relative;
+	background-image:url(image/bg.reklama.gif);
+	background-repeat:no-repeat;
+}
+#sideRight-bot {
+	float: right;
+	margin-top: 486px;
+	margin-right: -3px;
+	width: 220px;
+	height:446px;
+	margin-left: -250px;
+	position: relative;
+	background-image:url(image/recomendet.gif);
+	background-repeat:no-repeat;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	width: 942px;
+	height:96px;
+	/*margin-top: -200px;*/
+	margin: 90px auto 0;
+	height: 96px;
+	background-image:url(image/footer.gif);
+	background-repeat:no-repeat;
+	position: relative;
+}
