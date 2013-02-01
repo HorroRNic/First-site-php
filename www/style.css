@@ -14,16 +14,46 @@ body {
 	background-repeat:repeat-x;
 	background-color:#dbdbdb;
 }
+/********************************Создания класса для меню******************************/
+.tr { 
+/*background: url(http://изо1.jpg) no-repeat 50% 50%;  */
+display: block;
+width: auto; 
+height: 24px; 
+font-family:"Times New Roman", Times, serif;
+	font-size:14px;
+	outline: none;
+	text-decoration: none;
+	color:#FFF;
+}
+.tr:hover { 
+margin:-7px;
+padding-top:8px;
+padding-left:12px;
+color:#000;
+background-color:#bbbbbb; 
+/*height:34px;*/
+background-image:url(image/menu-font.gif);
+text-decoration:none;
+}
+.tr:visited {
+	/*color:#FFF;*/
+}
+.atr {
+	
+}
+
 a {
 	color: blue;
 	outline: none;
-	text-decoration: underline;
-}
-a:hover {
 	text-decoration: none;
 }
+
+a:hover {
+	text-decoration:none;
+}
 p {
-	margin: 0 0 0px
+	margin: 0 0 0px;
 }
 img {
 	border: none;
@@ -33,9 +63,9 @@ input {
 }
 #wrapper {
 	width: 942px;
-	height:auto;
 	margin: 0 auto;
 	margin-top: 10px;
+	margin-bottom: 10px;
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
@@ -52,7 +82,8 @@ input {
 #header {
 	margin-top: 10px;
 	height: 188px; /*942x188 картинка над хедером + шапка лого поиск*/
-	background-image:url(image/foo.gif);
+	width:942px;
+	background-image:url(image/header.png);
 	background-repeat:no-repeat;
 }
 #menu {
@@ -62,7 +93,72 @@ input {
 	background-image:url(image/menu.png);
 	background-repeat:no-repeat;
 }
-
+				/*Главная */
+#main { /*Решить проблему с Меню что бы не было смещения при наведении на Главную.*/
+	/* 82x34*/
+	float:left;
+	margin:0px;
+	margin-left:10px;	
+	/*background-color:#bbbbbb;*/
+	width:82px;
+	height:34px;
+	
+}
+			/*Выставка*/
+#fair {
+	/* 82x34*/
+	float:left;
+	/*margin:10px;
+	margin-left:100px;
+	margin-top:-30px;*/
+	/*background-color:#bbbbbb;*/
+	width:82px;
+	height:34px;
+		
+}	
+			/*Пресс-релизы*/
+#relize {
+	/* 82x34*/
+	float:left;
+	/*margin:10px;
+	margin-left:200px;
+	margin-top:-43px;*/
+	/*background-color:#bbbbbb;*/
+	width:164px;
+	height:34px;
+		
+}	
+#company {			/*Предприятие*/
+	/* 82x34*/
+	float:left;
+	/*margin:10px;
+	margin-left:380px;
+	margin-top:-43px;*/
+	/*background-color:#bbbbbb;*/
+	width:164px;
+	height:34px;
+		
+}	
+			/*Статьи*/
+#article {
+	/* 82x34*/
+	float:left;
+	/*margin:10px;
+	margin-left:580px;
+	margin-top:-43px;*/
+	/*background-color:#bbbbbb;*/
+	width:164px;
+	height:34px;
+		
+}	
+	/*Сделать по принцепу остальное.*/
+				/*Для заполнения меню*/
+H6{
+		padding-top:8px;
+		padding-left:12px;
+	font-family:"Times New Roman", Times, serif;
+	font-size:14px;
+}
 /* Middle
 -----------------------------------------------------------------------------*/
 #middle {
@@ -127,7 +223,8 @@ input {
 -----------------------------------------------------------------------------*/
 #sideRight {
 	float: right;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
+	margin-top:20px;
 	margin-right: -3px;
 	width: 220px;
 	height:446px;
@@ -137,12 +234,13 @@ input {
 	background-repeat:no-repeat;
 }
 #sideRight-bot {
-	float: right;
+	float:right;
 	margin-top: 486px;
+	/*margin: 486px;*/
 	margin-right: -3px;
-	width: 220px;
-	height:446px;
 	margin-left: -250px;
+	width:222px;
+	height:183px;
 	position: relative;
 	background-image:url(image/recomendet.gif);
 	background-repeat:no-repeat;
@@ -153,10 +251,45 @@ input {
 #footer {
 	width: 942px;
 	height:96px;
-	/*margin-top: -200px;*/
-	margin: 90px auto 0;
-	height: 96px;
+	margin: 0 auto;
+	/*margin-bottom:200px;*/
+	margin-top:-64px;
 	background-image:url(image/footer.gif);
 	background-repeat:no-repeat;
 	position: relative;
+}
+/*Decor
+--------------------------------------------------------------------------------*/
+#decor-one {
+	float:left;
+	width:197px;
+	height:70px;
+	margin:10px;
+	margin-left:178px;/*Точный кординат*/
+	background-image:url(image/footer-block.png);
+	
+	}
+	#decor-two {
+	float:left;
+	width:197px;
+	height:70px;
+	margin:10px;
+	margin-left:-5px;
+	background-image:url(image/footer-block.png);
+	
+	}
+	#decor-three {
+	float:left;
+	width:197px;
+	height:70px;
+	margin:10px;
+	margin-left:-5px;
+	background-image:url(image/footer-block.png);
+	
+	}
+a.li {
+	color:#03F;
+	margin-left:0px;
+	
+	/*display:inline-block;*/
 }
