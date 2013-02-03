@@ -39,10 +39,40 @@ text-decoration:none;
 .tr:visited {
 	/*color:#FFF;*/
 }
-.atr {
-	
-}
+/***************************************************/
 
+/*******************************************Класс шрифта Candara**************/
+.style-font{
+	margin:25px;
+	font-family:Candara;
+	font-size:14px;
+}
+.style-font-new {
+	margin:25px 85px 0px 25px;
+	font-family:Candara;
+	font-size:14px;
+}
+.style-font-article {
+	margin:25px 105px 0px 25px;
+	font-family:Candara;
+	font-size:14px;
+}
+.style-font-company {
+	margin:25px 125px 0px 25px;
+	font-family:Candara;
+	font-size:14px;
+}
+.date {
+	margin:25px;
+	font-family:Candara;
+	font-size:12px;
+	color:#999;
+}
+.compamy-style {
+	background-color:#FFF;
+	width:auto;
+}
+/******************************************Класс шрифта*************************/
 a {
 	color: blue;
 	outline: none;
@@ -50,7 +80,7 @@ a {
 }
 
 a:hover {
-	text-decoration:none;
+	text-decoration:underline;
 }
 p {
 	margin: 0 0 0px;
@@ -74,11 +104,62 @@ input {
 
 /* Header
 -----------------------------------------------------------------------------*/
-	
+.hd {
+	float:left;
+	width:200px;
+	height:10px;
+	margin:10px;
+	margin-left:5px;
+	color:#000;
+}
+.hd:hover {
+text-decoration:underline; 
+/*text-decoration:none;*/
+	/*border-bottom:#000 1px dotted;*/
+	/*padding:5px;*/
+}
 	#site-name {
+		
 		width:115px;
 		height:45px;
+		
 	}
+							/*Find system*/
+		#find {
+			float:right;
+			margin:-35px 177px 0px 10px;
+			width:115px;
+			height:45px;
+		}
+		
+		#number {
+	float: left;
+	height: 16px;
+	padding: 2px 8px;
+	width: 218px;
+	border: 0px;
+	margin: 2px 0px 0px 12px;
+	font: normal 11px Verdana;
+	color: #999;
+	background-image:url(image/find-main.jpg);
+	background-repeat:no-repeat;
+}
+		
+		#btn,
+#btn:hover,
+#btn:active,
+#btn:focus {
+	float: left;
+	margin-left: 246px;
+	margin-top:-20px;
+	border: 0px;
+	width: 46px;
+	height: 21px;
+	outline:none;
+	background-image:url(image/find.jpg);
+	background-repeat:no-repeat;
+}
+		/******************************Find system****************/
 #header {
 	margin-top: 10px;
 	height: 188px; /*942x188 картинка над хедером + шапка лого поиск*/
@@ -86,6 +167,14 @@ input {
 	background-image:url(image/header.png);
 	background-repeat:no-repeat;
 }
+#decor-header-one {
+	float:left;
+	margin-left:20px;
+	
+}
+
+
+/*--------------------------------------Menu-----------------------------------------------------*/
 #menu {
 	margin-top: 10px;
 	height:35px;
@@ -98,9 +187,9 @@ input {
 	/* 82x34*/
 	float:left;
 	margin:0px;
-	margin-left:10px;	
+	margin-left:15px;	
 	/*background-color:#bbbbbb;*/
-	width:82px;
+	width:70px;
 	height:34px;
 	
 }
@@ -108,11 +197,11 @@ input {
 #fair {
 	/* 82x34*/
 	float:left;
-	/*margin:10px;
-	margin-left:100px;
-	margin-top:-30px;*/
+	/*margin:10px;*/
+	margin-left:4px;
+	/*margin-top:-30px;*/
 	/*background-color:#bbbbbb;*/
-	width:82px;
+	width:84px;
 	height:34px;
 		
 }	
@@ -120,22 +209,37 @@ input {
 #relize {
 	/* 82x34*/
 	float:left;
+	margin-left:4px;
+	/*margin:10px;
+	margin-top:-43px;*/
+	/*background-color:#bbbbbb;*/
+	width:113px;
+	height:34px;
+		
+}	
+			/*Продукция*/
+#product {
+	/* 82x34*/
+	float:left;
+	margin-left:4px;
 	/*margin:10px;
 	margin-left:200px;
 	margin-top:-43px;*/
 	/*background-color:#bbbbbb;*/
-	width:164px;
+	width:96px;
 	height:34px;
 		
 }	
+
 #company {			/*Предприятие*/
 	/* 82x34*/
 	float:left;
+	margin-left:4px;
 	/*margin:10px;
 	margin-left:380px;
 	margin-top:-43px;*/
 	/*background-color:#bbbbbb;*/
-	width:164px;
+	width:111px;
 	height:34px;
 		
 }	
@@ -143,11 +247,12 @@ input {
 #article {
 	/* 82x34*/
 	float:left;
+	margin-left:4px;
 	/*margin:10px;
 	margin-left:580px;
 	margin-top:-43px;*/
 	/*background-color:#bbbbbb;*/
-	width:164px;
+	width:75px;
 	height:34px;
 		
 }	
@@ -159,6 +264,7 @@ H6{
 	font-family:"Times New Roman", Times, serif;
 	font-size:14px;
 }
+/*--------------------------------------------------------/Menu----------------------------------------*/
 /* Middle
 -----------------------------------------------------------------------------*/
 #middle {
@@ -188,14 +294,19 @@ H6{
 	
 }
 #content-right {
-	margin-top:-326px;
+	margin-top:-652px;
 	margin-left:300px;
 	height:448px;
 	width:448px;
 	background-image:url(image/press-relise.gif);
 	background-repeat:no-repeat;
-	float:bot;
-	padding: 0 10px 0 0;
+	float:left;
+	/*padding: 0 10px 0 0;*/
+}
+#content-right-first {
+	/*width:380px;*/
+	/*background-color:#f8f1db;*/
+	/*margin-left:5px;*/
 }
 #content-left-bot {
 	margin-top:20px;
@@ -209,7 +320,7 @@ H6{
 	
 }
 #content-right-bot {
-	margin-top:20px;
+	margin-top:-185px;
 	margin-right:230px;
 	/*margin-bottom:auto;*/
 	padding: 0  10px 0 0;
@@ -219,13 +330,21 @@ H6{
 	background-image:url(image/organization.gif);
 	background-repeat:no-repeat;
 }
+#content-right-bot-atlant {
+	background-color:#f8f1db;
+	margin-left:5px;
+}
+#content-right-bot-stals {
+	background-color:#f8f1db;
+	margin-left:5px;
+}
 /* Sidebar Right
 -----------------------------------------------------------------------------*/
 #sideRight {
 	float: right;
 	/*margin-top: 20px;*/
 	margin-top:20px;
-	margin-right: -3px;
+	margin-right: 2px;
 	width: 220px;
 	height:446px;
 	margin-left: -250px;
@@ -233,11 +352,12 @@ H6{
 	background-image:url(image/bg.reklama.gif);
 	background-repeat:no-repeat;
 }
+					/*Рекомендации*/
 #sideRight-bot {
 	float:right;
-	margin-top: 486px;
+	margin-top: 488px;
 	/*margin: 486px;*/
-	margin-right: -3px;
+	margin-right: 2px;
 	margin-left: -250px;
 	width:222px;
 	height:183px;
@@ -252,7 +372,6 @@ H6{
 	width: 942px;
 	height:96px;
 	margin: 0 auto;
-	/*margin-bottom:200px;*/
 	margin-top:-64px;
 	background-image:url(image/footer.gif);
 	background-repeat:no-repeat;
@@ -264,8 +383,8 @@ H6{
 	float:left;
 	width:197px;
 	height:70px;
-	margin:10px;
-	margin-left:178px;/*Точный кординат*/
+	margin:15px;
+	margin-left:13px;
 	background-image:url(image/footer-block.png);
 	
 	}
@@ -273,7 +392,7 @@ H6{
 	float:left;
 	width:197px;
 	height:70px;
-	margin:10px;
+	margin:15px;
 	margin-left:-5px;
 	background-image:url(image/footer-block.png);
 	
@@ -282,14 +401,33 @@ H6{
 	float:left;
 	width:197px;
 	height:70px;
-	margin:10px;
+	margin:15px;
 	margin-left:-5px;
 	background-image:url(image/footer-block.png);
-	
 	}
-a.li {
-	color:#03F;
-	margin-left:0px;
+#logo {
+	float:left;
+	width:125px;
+	height:70px;
+	margin:15px;
+	margin-left:-10px;
+}
+#copyright {
+	float:left;
+	width:125px;
+	height:70px;
+	margin:15px;
+	margin-left:25px;
+}
+a.lg{
 	
-	/*display:inline-block;*/
+	padding-left:45px;
+}
+a.lgi {
+		padding-left:70px;
+}
+a.li {
+	color:#000;
+	text-decoration:underline;
+	padding:15px;
 }
